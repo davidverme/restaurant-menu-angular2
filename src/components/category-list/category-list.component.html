@@ -1,0 +1,5 @@
+<ul class="category-list">
+	<li *ngFor="let category of categories" (click)="displayCategory(category.name)">
+		{{category.name}}
+	</li>
+</ul>

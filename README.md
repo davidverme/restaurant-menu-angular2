@@ -5,4 +5,4 @@ A restaurant menu using AngularJS 2
 ## Run the application
 - npm install
 - npm run start
-- go to http://localhost:8080
+- go to http://localhost:9000
