@@ -5,11 +5,16 @@ import {
 } from '@angular/router';
 
 import { CategoryListComponent } from './components/category-list/category-list.component';
+import { DishesListComponent } from './components/dishes-list/dishes-list.component';
 
 const appRoutes: Routes = [
     {
         path: 'categories',
         component: CategoryListComponent
+    },
+    {
+        path: 'category/:name',
+        component: DishesListComponent
     },
     {
         path: '',

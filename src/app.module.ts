@@ -13,7 +13,8 @@ import { RestService } from './services/rest.service';
 
 import {
     AppComponent,
-    CategoryListComponent
+    CategoryListComponent,
+    DishesListComponent
 } from './components';
 
 @NgModule({
@@ -21,6 +22,7 @@ import {
     declarations: [
         AppComponent,
         CategoryListComponent,
+        DishesListComponent
     ],
     imports: [
         AppRoutingModule,

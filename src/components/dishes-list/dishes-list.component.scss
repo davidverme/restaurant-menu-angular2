@@ -1,0 +1,31 @@
+.dishes-list {
+	list-style: none;
+	padding: 0;
+
+	li {
+		img {
+			object-fit: cover;
+			width:30vw;
+			height:30vw;
+			float: left;
+			margin: 10px;
+		}
+
+		div {
+			border: 1px solid;
+			height: calc(30vw + 20px);
+			margin: 15px;
+			cursor: pointer;
+	    	box-sizing: border-box;
+
+			&:hover {
+				background-color: grey;
+			}
+
+			h3, label {
+				display: block;
+				margin: 5px;
+			}
+		}
+	}
+}

@@ -1,3 +1,23 @@
 .category-list {
-	color: red;
+	list-style: none;
+	padding: 0;
+
+	li {
+		div {
+			border: 1px solid;
+			text-align: center;
+			padding: 10px;
+			margin: 15px;
+			cursor: pointer;
+	    	box-sizing: border-box;
+
+			&:hover {
+				background-color: grey;
+			}
+		}
+	}
+}
+
+.cateogries-header {
+	text-align: center;
 }

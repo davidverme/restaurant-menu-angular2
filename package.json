@@ -10,7 +10,7 @@
     "test": "karma start ./karma/karma.conf.js",
     "test:headless": "karma start ./karma/karma.conf.js --browsers PhantomJS --autoWatch=true --singleRun=false",
     "test:single": "karma start ./karma/karma.conf.js --browsers PhantomJS",
-    "build": "webpack --config ./webpack/webpack.dev.js"
+    "build": "webpack --config ./webpack/webpack.prod.js"
   },
   "keywords": [],
   "author": "",

@@ -16,11 +16,11 @@ export class DishesService {
         return this.categories.value;
     }
 
-    getDishesByCategory(categoryName: string): Array<Dish> {
-        let result = this.categories.value.find((item) => item.name === categoryName);
+    getDishesByCategory(categoryId: string): Array<Dish> {
+        let result = this.categories.value.find((item) => item.id === categoryId);
 
         if (!result) {
-            result = null;
+            return null;
         }
 
         return result.dishes;

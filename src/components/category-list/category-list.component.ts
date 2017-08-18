@@ -17,7 +17,7 @@ export class CategoryListComponent {
             .subscribe((data) => this.categories = data);
     }
 
-    displayCategory(name: string) {
-        this.router.navigateByUrl(`/category/${name}`);
+    displayCategory(id: string) {
+        this.router.navigateByUrl(`/category/${id}`);
     }
 }

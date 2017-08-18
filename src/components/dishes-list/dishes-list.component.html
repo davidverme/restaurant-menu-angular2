@@ -1,0 +1,11 @@
+<ul class="dishes-list">
+	<li *ngFor="let dish of dishes" (click)="displayUgc(dish.id)">
+		<div>
+			<img [src]="dish.picture" />
+			<h3>{{dish.name}}</h3>
+			<label>${{dish.price}}</label>
+			<label>{{dish.calories}} Kcal</label>
+			<label>Ranking: {{dish.ranking}}</label>
+		</div>
+	</li>
+</ul>
