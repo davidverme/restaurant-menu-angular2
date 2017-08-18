@@ -12,7 +12,7 @@ import { DishesService } from '../../services/dishes.service';
 export class DishesListComponent {
     dishes: Array<Dish> = [];
 
-    constructor(private dishesService: DishesService, private route: ActivatedRoute) { }
+    constructor(private dishesService: DishesService, private route: ActivatedRoute, private router: Router) { }
 
     ngOnInit() {
         this.dishesService.categories.subscribe(() => {
@@ -21,5 +21,9 @@ export class DishesListComponent {
                         this.dishes = this.dishesService.getDishesByCategory(value);
             })
         });
+    }
+
+    displayDetails(id: string) {
+        this.router.navigateByUrl(`/dish/${id}`);
     }
 }

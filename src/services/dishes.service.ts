@@ -25,4 +25,15 @@ export class DishesService {
 
         return result.dishes;
     }
+
+
+    getDishById(dishId: number): Dish {
+        let result: Dish = null;
+        this.categories.value.some((category) => {
+            result = category.dishes.find((item) => item.id === dishId);
+            return result != null;
+        });
+
+        return result;
+    }
 }

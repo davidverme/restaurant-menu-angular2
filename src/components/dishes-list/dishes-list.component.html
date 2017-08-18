@@ -1,5 +1,5 @@
 <ul class="dishes-list">
-	<li *ngFor="let dish of dishes" (click)="displayUgc(dish.id)">
+	<li *ngFor="let dish of dishes" (click)="displayDetails(dish.id)">
 		<div>
 			<img [src]="dish.picture" />
 			<h3>{{dish.name}}</h3>

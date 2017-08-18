@@ -6,6 +6,7 @@ import {
 
 import { CategoryListComponent } from './components/category-list/category-list.component';
 import { DishesListComponent } from './components/dishes-list/dishes-list.component';
+import { DishDetailsComponent } from './components/dish-details/dish-details.component';
 
 const appRoutes: Routes = [
     {
@@ -15,6 +16,10 @@ const appRoutes: Routes = [
     {
         path: 'category/:name',
         component: DishesListComponent
+    },
+    {
+        path: 'dish/:id',
+        component: DishDetailsComponent
     },
     {
         path: '',
