@@ -37,6 +37,7 @@ module.exports = {
             name: 'vendor'
         }),
         new HtmlWebpack({
+            favicon: './src/restaurant.ico',
             filename: 'index.html',
             inject: 'body',
             template: path.resolve(rootDir, 'src', 'index.html')

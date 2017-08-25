@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule }   from '@angular/forms';
 
 import { InMemoryWebApiModule } from 'angular-in-memory-web-api';
 
@@ -31,7 +32,8 @@ import {
         BrowserModule,
         HttpModule,
         InMemoryWebApiModule.forRoot(FauxDishesService),
-        ReactiveFormsModule
+        ReactiveFormsModule,
+        FormsModule
     ],
     providers: [
         DishesService,

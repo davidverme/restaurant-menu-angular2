@@ -6,7 +6,9 @@ import { Category } from '../../models';
 
 @Component({
     selector: 'dynamic-form-app',
-    template: require('./app.component.html')
+    template: require('./app.component.html'),
+    styles: [ require('./app.component.scss') ]
+
 })
 export class AppComponent {
 

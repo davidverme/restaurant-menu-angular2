@@ -1,0 +1,16 @@
+.dish-detail {
+	text-align: center;
+	padding: 50px;
+	box-sizing: border-box;
+
+	img {
+		object-fit: cover;
+		width:50vw;
+		height:50vw;
+	}
+
+	h3, label {
+		display: block;
+		margin: 5px;
+	}
+}

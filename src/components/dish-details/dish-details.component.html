@@ -1,0 +1,23 @@
+<div class="dish-detail">
+	<img [src]="dish.picture" />
+	<h3>{{dish.name}}</h3>
+	<label>${{dish.price}}</label>
+	<label>{{dish.calories}} Kcal</label>
+	<label>Ranking: {{dish.ranking}}</label>
+	
+	<form (ngSubmit)="onSubmit()" [hidden]="submitted">
+      	<div class="form-group">
+        <label for="rating">Rate It!</label>
+        <select class="form-control" id="rating" required [(ngModel)]="rating" name="rating">
+          <option [value]="1">1</option>
+          <option [value]="2">2</option>
+          <option [value]="3">3</option>
+          <option [value]="4">4</option>
+          <option [value]="5">5</option>
+        </select>
+      </div>
+ 
+     	 <button type="submit" class="btn btn-success">Submit</button>
+ 
+    </form>
+</div>

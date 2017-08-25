@@ -23,7 +23,8 @@ module.exports = {
         loaders: [
             { loader: 'raw', test: /\.(css|html)$/ },
             { exclude: /node_modules/, loader: 'ts', test: /\.ts$/ },
-            { test: /\.scss$/, loaders: ['raw-loader', 'sass-loader'] }
+            { test: /\.scss$/, loaders: ['raw-loader', 'sass-loader'] },
+            { test: /\.(png|jpg|jpeg|gif|svg|woff|woff2|ttf|eot)$/, loader: 'file-loader' }
         ]
     },
     output: {
@@ -48,6 +49,7 @@ module.exports = {
             name: 'vendor'
         }),
         new HtmlWebpack({
+            favicon: './src/restaurant.ico',
             filename: 'index.html',
             inject: 'body',
             template: path.resolve(rootDir, 'src', 'index.html')
